@@ -1,12 +1,86 @@
+.todo-wrapper {
+  text-align: center;
+  padding: 20px;
+  margin: 48px;
+}
 
-/* 
+.todo-title {
+  color: turquoise;
+  font-size: 2.5rem;
+  padding: 24px;
+  margin: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-*/
+.todo-input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: turquoise;
+  box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  word-break: break-word;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+.delete-button {
+  cursor: pointer;
+  color: #999;
+  font-size: 1.2rem;
+  padding: 0 8px;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: #666;
+}
+
+.todo-counter {
+  text-align: left;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+}
+
+.todo-input:focus-visible {
+  outline: none;
+}
+
+.form-group {
+  margin: 0;
+}
