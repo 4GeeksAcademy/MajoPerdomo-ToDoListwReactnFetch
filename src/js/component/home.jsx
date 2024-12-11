@@ -6,7 +6,7 @@ const TodoList = () => {
   const [placeholder, setPlaceholder] = useState("Qué tenemos pendiente?");
   const [taskHover, setTaskHover] = useState(null);
 
-  const API_URL = 'https://playground.4geeks.com/apis/fake/todos/user/majopp';
+  const API_URL = 'https://playground.4geeks.com/todo/users/majopp';
   const createNewUser = () => {
     fetch(API_URL, {
       method: "POST",
